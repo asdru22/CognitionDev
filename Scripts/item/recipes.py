@@ -1,24 +1,11 @@
-import os
 import json
+import os
 import string
 
 
-def load_json_files(directory):
-    """Load all JSON files from the given directory."""
-    json_files = [f for f in os.listdir(directory) if f.endswith('.json')]
-    data_list = []
-
-    for file in json_files:
-        with open(os.path.join(directory, file), 'r') as f:
-            data = json.load(f)
-            data_list.append((file, data))
-
-    return data_list
-
-
-def convert_recipe(recipe_data):
+def update(data,file,name):
     """Convert the recipe to the desired format with pattern and key mappings."""
-    pattern = recipe_data['recipe']
+    pattern = data['recipe']
     ingredient_mapping = {}
     new_pattern = []
     letters = iter(string.ascii_uppercase)  # Iterator for generating unique letters A, B, C, etc.
@@ -47,29 +34,31 @@ def convert_recipe(recipe_data):
         "pattern": new_pattern,
         "key": key_mapping,
         "result": {
-            "id": "cgn:automatic_bow",  # Example result
+            "id": f"cgn:{name[:-5]}",  # Example result
             "count": 1
         }
     }
 
-    return new_recipe
+def open_item_files(directory):
+    for root, dirs, files in os.walk(directory):
+        for file in files:
+            if file.endswith(".json"):
+                file_path = os.path.join(root, file)
+                try:
+                    with open(file_path, 'r+') as json_file:
+                        data = json.load(json_file)
+                        if "recipe" in data and isinstance(data["recipe"],list):
+                            update(data,json_file,file)
+                except json.JSONDecodeError as e:
+                    print(f"Error decoding JSON file {file_path}: {e}")
+                except Exception as e:
+                    print(f"Error opening file {file_path}: {e}")
 
 
-def process_directory(directory):
-    """Process all JSON files in the directory and convert their recipes."""
-    json_data = load_json_files(directory)
 
-    for file_name, data in json_data:
-        if 'recipe' in data:
-            converted_recipe = convert_recipe(data)
-
-            # Save the converted recipe to a new JSON file
-            output_file = os.path.join(directory, f"converted_{file_name}")
-            with open(output_file, 'w') as f:
-                json.dump(converted_recipe, f, indent=4)
-
-            print(f"Processed {file_name} -> {output_file}")
-
+def main():
+    open_item_files('items')
 
 # Example usage: Process JSON files in the 'recipes' directory
-process_directory('items')
+if __name__ == '__main__':
+    main()
