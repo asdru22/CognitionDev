@@ -35,21 +35,23 @@
     },
     "!minecraft:food": {}
   },
-  "recipe": [
-    [
-      "",
-      "",
-      "cgn:cog"
+  "recipe": {
+    "type": "minecraft:crafting_shaped",
+    "category": "equipment",
+    "pattern": [
+      "  C",
+      " BS",
+      "CL "
     ],
-    [
-      "",
-      "bow",
-      "cgn:screw"
-    ],
-    [
-      "cgn:cog",
-      "leather",
-      ""
-    ]
-  ]
+    "key": {
+      "C": "cgn:cog",
+      "B": "minecraft:bow",
+      "S": "cgn:screw",
+      "L": "minecraft:leather"
+    },
+    "result": {
+      "id": "cgn:automatic_bow",
+      "count": 1
+    }
+  }
 }

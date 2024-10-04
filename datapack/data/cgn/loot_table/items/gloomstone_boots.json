@@ -41,7 +41,8 @@
               "cgn": {
                 "ebonite_upgradeable": true
               }
-            }
+            },
+            "minecraft:item_model": "cgn:armor/gloomstone_boots"
           }
         },
         {

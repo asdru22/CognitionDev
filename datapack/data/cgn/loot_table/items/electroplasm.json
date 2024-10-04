@@ -19,7 +19,8 @@
               "cgn": {
                 "brewing_ingredient": true
               }
-            }
+            },
+            "minecraft:item_model": "cgn:material/electroplasm"
           }
         },
         {

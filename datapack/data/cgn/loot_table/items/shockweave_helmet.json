@@ -37,7 +37,8 @@
               "slot": "head",
               "dispensable": true
             },
-            "minecraft:tooltip_style": "cgn:default"
+            "minecraft:tooltip_style": "cgn:default",
+            "minecraft:item_model": "cgn:armor/shockweave_helmet"
           }
         },
         {

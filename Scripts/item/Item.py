@@ -31,6 +31,8 @@ class Item:
         if settings.default_components and self.custom_data:
             self.components["minecraft:custom_data"] = {settings.namespace: self.custom_data}
 
+        self.components["minecraft:item_model"] = self.get_item_model_component(settings.namespace)
+
         # Lore
         self.lore = data.get('lore', None)
 
@@ -43,7 +45,16 @@ class Item:
         # Translation Name
         self.translation_name = None
 
+        # Recipe
+        self.recipe = data.get('recipe', {})
+
     def __repr__(self):
         # Generate a string representation of all attributes
         attrs = ', '.join(f"{key}={value!r}" for key, value in self.__dict__.items())
         return f"Item({attrs})"
+
+    def get_item_model_component(self, namespace):
+        if self.type:
+            return f'{namespace}:{self.type}/{self.id}'
+        else:
+            return f'{namespace}:{self.id}'

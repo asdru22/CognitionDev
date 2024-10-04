@@ -21,7 +21,8 @@
               "cgn": {
                 "charged": false
               }
-            }
+            },
+            "minecraft:item_model": "cgn:weapon/emberlash"
           }
         },
         {

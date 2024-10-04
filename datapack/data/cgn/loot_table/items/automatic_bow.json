@@ -44,7 +44,8 @@
               "has_consume_particles": false
             },
             "!minecraft:food": {},
-            "minecraft:tooltip_style": "cgn:default"
+            "minecraft:tooltip_style": "cgn:default",
+            "minecraft:item_model": "cgn:weapon/automatic_bow"
           }
         },
         {

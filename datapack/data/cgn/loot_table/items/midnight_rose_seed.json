@@ -21,7 +21,8 @@
                 "ignore_durability": true,
                 "consume": true
               }
-            }
+            },
+            "minecraft:item_model": "cgn:block/midnight_rose_seed"
           }
         },
         {

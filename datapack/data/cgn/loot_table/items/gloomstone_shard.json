@@ -14,7 +14,8 @@
           "components": {
             "!minecraft:food": {},
             "!minecraft:consumable": {},
-            "minecraft:tooltip_style": "cgn:default"
+            "minecraft:tooltip_style": "cgn:default",
+            "minecraft:item_model": "cgn:material/gloomstone_shard"
           }
         },
         {

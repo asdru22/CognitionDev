@@ -19,7 +19,8 @@
               "cgn": {
                 "pottable": true
               }
-            }
+            },
+            "minecraft:item_model": "cgn:block/wispthorn"
           }
         },
         {

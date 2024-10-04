@@ -19,7 +19,8 @@
                 "prevent_striders": true,
                 "ignore_durability": true
               }
-            }
+            },
+            "minecraft:item_model": "cgn:tool/electromodulator"
           }
         },
         {

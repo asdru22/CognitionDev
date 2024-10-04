@@ -43,7 +43,8 @@
               "cgn": {
                 "ebonite_upgradeable": true
               }
-            }
+            },
+            "minecraft:item_model": "cgn:weapon/gloomstone_dagger"
           }
         },
         {

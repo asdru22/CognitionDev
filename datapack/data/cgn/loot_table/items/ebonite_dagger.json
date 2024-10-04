@@ -41,7 +41,8 @@
                 }
               ]
             },
-            "minecraft:tooltip_style": "cgn:default"
+            "minecraft:tooltip_style": "cgn:default",
+            "minecraft:item_model": "cgn:weapon/ebonite_dagger"
           }
         },
         {

@@ -15,7 +15,8 @@
             "minecraft:damage_resistant": {
               "types": "#minecraft:is_fire"
             },
-            "minecraft:tooltip_style": "cgn:default"
+            "minecraft:tooltip_style": "cgn:default",
+            "minecraft:item_model": "cgn:material/ebonite_ingot"
           }
         },
         {

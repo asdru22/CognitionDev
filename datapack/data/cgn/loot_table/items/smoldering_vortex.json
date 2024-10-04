@@ -32,7 +32,8 @@
               "cgn": {
                 "custom_block": true
               }
-            }
+            },
+            "minecraft:item_model": "cgn:block/smoldering_vortex"
           }
         },
         {

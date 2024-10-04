@@ -24,7 +24,8 @@
               "cgn": {
                 "blooming": false
               }
-            }
+            },
+            "minecraft:item_model": "cgn:weapon/bloodwraught_briar"
           }
         },
         {

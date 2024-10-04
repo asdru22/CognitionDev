@@ -50,7 +50,8 @@
                 "double_edged_sword": true,
                 "throwing_damage": 7
               }
-            }
+            },
+            "minecraft:item_model": "cgn:weapon/double_edged_ebonite_sword"
           }
         },
         {

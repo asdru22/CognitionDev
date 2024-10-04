@@ -1,3 +1,4 @@
+import json
 import os
 
 
@@ -29,10 +30,13 @@ class Settings:
             f"datapack={self.datapack}, resourcepack={self.resourcepack})")
 
     def get_lang_path(self):
-        return os.path.join(self.resourcepack,'assets',self.namespace,'lang')
+        return os.path.join(self.resourcepack, 'assets', self.namespace, 'lang')
 
     def get_loot_table_path(self):
-        return os.path.join(self.datapack,'data',self.namespace,'loot_table')
+        return os.path.join(self.datapack, 'data', self.namespace, 'loot_table')
+
+    def get_function_path(self):
+        return os.path.join(self.datapack, 'data', self.namespace, 'function')
 
 
 def get_trims():
@@ -65,3 +69,10 @@ def get_trims():
             "mindweaver"
         ]
     }
+
+
+def load_json_file(path):
+    f = open(path, 'r', encoding='utf-8')
+    return json.load(f)
+
+

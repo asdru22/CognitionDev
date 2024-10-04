@@ -17,7 +17,8 @@
               "cgn": {
                 "projectile": true
               }
-            }
+            },
+            "minecraft:item_model": "cgn:weapon/pyroplastic_bolt"
           }
         },
         {
