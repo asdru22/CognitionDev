@@ -1,11 +1,8 @@
 {
-  "base_item": "poisonous_potato",
+  "base_item": "warped_fungus_on_a_stick",
   "translation": "Emberlash",
   "components": {
-    "minecraft:max_damage": 1453,
-    "minecraft:max_stack_size": 1,
-    "!minecraft:food": {},
-    "!minecraft:consumable": {}
+    "!minecraft:max_damage": {}
   },
   "custom_data": {
     "charged": false

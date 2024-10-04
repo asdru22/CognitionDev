@@ -12,7 +12,6 @@ scoreboard objectives add cgn.animation_timer dummy
 
 scoreboard objectives add cgn.malachite_fragments_collected dummy
 
-scoreboard objectives add cgn.sneak_time custom:sneak_time
 scoreboard objectives add cgn.air_time dummy
 
 scoreboard objectives add cgn.heal dummy
