@@ -12,15 +12,14 @@
         {
           "function": "minecraft:set_components",
           "components": {
-            "minecraft:tooltip_style": "cgn:default",
-            "minecraft:item_model": "cgn:weapon/windup_crossbow",
             "minecraft:max_damage": 545,
             "max_stack_size": 1,
             "minecraft:custom_data": {
               "cgn": {
                 "usable": true
               }
-            }
+            },
+            "minecraft:tooltip_style": "cgn:default"
           }
         },
         {

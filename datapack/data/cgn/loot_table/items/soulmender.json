@@ -12,9 +12,8 @@
         {
           "function": "minecraft:set_components",
           "components": {
-            "minecraft:tooltip_style": "cgn:default",
-            "minecraft:item_model": "cgn:tool/soulmender",
-            "minecraft:max_damage": 350
+            "minecraft:max_damage": 350,
+            "minecraft:tooltip_style": "cgn:default"
           }
         },
         {

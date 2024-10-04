@@ -12,8 +12,6 @@
         {
           "function": "minecraft:set_components",
           "components": {
-            "minecraft:tooltip_style": "cgn:default",
-            "minecraft:item_model": "cgn:weapon/double_edged_ebonite_sword",
             "minecraft:max_damage": 2031,
             "minecraft:consumable": {
               "animation": "spear",
@@ -46,6 +44,7 @@
                 }
               ]
             },
+            "minecraft:tooltip_style": "cgn:default",
             "minecraft:custom_data": {
               "cgn": {
                 "double_edged_sword": true,

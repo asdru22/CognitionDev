@@ -1,4 +1,3 @@
-import json
 import os
 
 
@@ -31,6 +30,10 @@ class Settings:
 
     def get_lang_path(self):
         return os.path.join(self.resourcepack,'assets',self.namespace,'lang')
+
+    def get_loot_table_path(self):
+        return os.path.join(self.datapack,'data',self.namespace,'loot_table')
+
 
 def get_trims():
     return {

@@ -12,8 +12,6 @@
         {
           "function": "minecraft:set_components",
           "components": {
-            "minecraft:tooltip_style": "cgn:default",
-            "minecraft:item_model": "cgn:armor/mindflare",
             "minecraft:max_damage": 404,
             "minecraft:attribute_modifiers": {
               "modifiers": [
@@ -30,7 +28,8 @@
               "model": "cgn:mindflare",
               "slot": "head",
               "dispensable": true
-            }
+            },
+            "minecraft:tooltip_style": "cgn:default"
           }
         },
         {

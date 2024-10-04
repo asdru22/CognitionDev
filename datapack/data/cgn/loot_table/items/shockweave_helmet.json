@@ -12,8 +12,6 @@
         {
           "function": "minecraft:set_components",
           "components": {
-            "minecraft:tooltip_style": "cgn:default",
-            "minecraft:item_model": "cgn:armor/shockweave_helmet",
             "minecraft:max_damage": 363,
             "minecraft:attribute_modifiers": {
               "modifiers": [
@@ -38,7 +36,8 @@
               "model": "cgn:shockweave",
               "slot": "head",
               "dispensable": true
-            }
+            },
+            "minecraft:tooltip_style": "cgn:default"
           }
         },
         {

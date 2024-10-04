@@ -1,0 +1,25 @@
+{
+  "base_item": "arrow",
+  "translation": "Pyroplastic Bolt",
+  "custom_data": {
+    "projectile": true
+  },
+  "count":4,
+  "recipe": [
+    [
+      "",
+      "arrow",
+      ""
+    ],
+    [
+      "arrow",
+      "cgn:pyroplasm",
+      "arrow"
+    ],
+    [
+      "",
+      "arrow",
+      ""
+    ]
+  ]
+}

@@ -12,8 +12,6 @@
         {
           "function": "minecraft:set_components",
           "components": {
-            "minecraft:tooltip_style": "cgn:default",
-            "minecraft:item_model": "cgn:weapon/electroplasm_carver",
             "minecraft:max_damage": 2031,
             "minecraft:attribute_modifiers": {
               "modifiers": [
@@ -39,7 +37,8 @@
                   "slot": "mainhand"
                 }
               ]
-            }
+            },
+            "minecraft:tooltip_style": "cgn:default"
           }
         },
         {

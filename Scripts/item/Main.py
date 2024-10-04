@@ -2,11 +2,13 @@ import json
 import os
 from item.Util import Settings
 from item.Item import Item
-from item.items.LootTable import make_loot_table
+from item.LootTable import make_loot_table
 
 
-def process_item(item, settings):
+def process_item(item, settings,lang):
     make_loot_table(item, settings)
+
+    lang[item.translation_name] = item.translation
 
 
 def open_item_files(directory, settings, lang):
@@ -18,7 +20,7 @@ def open_item_files(directory, settings, lang):
                     with open(file_path, 'r') as json_file:
                         data = json.load(json_file)
                         item = Item(file_path, data, settings)
-                        process_item(item, settings)
+                        process_item(item, settings, lang)
                 except json.JSONDecodeError as e:
                     print(f"Error decoding JSON file {file_path}: {e}")
                 except Exception as e:

@@ -12,8 +12,6 @@
         {
           "function": "minecraft:set_components",
           "components": {
-            "minecraft:tooltip_style": "cgn:default",
-            "minecraft:item_model": "cgn:weapon/automatic_bow",
             "minecraft:max_damage": 432,
             "max_stack_size": 1,
             "minecraft:attribute_modifiers": {
@@ -45,7 +43,8 @@
               "animation": "bow",
               "has_consume_particles": false
             },
-            "!minecraft:food": {}
+            "!minecraft:food": {},
+            "minecraft:tooltip_style": "cgn:default"
           }
         },
         {

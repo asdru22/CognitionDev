@@ -1,4 +1,5 @@
 import json
+import os
 
 
 def get_lore(lore, settings):
@@ -6,7 +7,8 @@ def get_lore(lore, settings):
 
     if settings.footer_lore:
         output.append(settings.footer_lore)
-        output.append("")
+        if lore:
+            output.append("")
 
     if lore:
         output.extend(lore)
@@ -33,7 +35,7 @@ def get_functions(item, settings):
         get_name(item, settings.namespace)
     ]
     if item.lore or settings.footer_lore:
-        get_lore(item.lore, settings)
+        functions.append(get_lore(item.lore, settings))
 
     return functions
 
@@ -43,9 +45,9 @@ def make_loot_table(item, settings):
         {"rolls": 1, "entries": [
             {
                 "type": "minecraft:item",
-                "name": f"minecraft: {item.base_item}"
+                "name": f"minecraft:{item.base_item}"
             }
         ],
          "functions": get_functions(item, settings)}]}
-    out = open('out.json', 'w')
+    out = open(os.path.join(settings.get_loot_table_path(),'items',f'{item.id}.json'), 'w')
     out.write(json.dumps(loot_table, indent=2))

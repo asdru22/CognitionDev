@@ -12,8 +12,6 @@
         {
           "function": "minecraft:set_components",
           "components": {
-            "minecraft:tooltip_style": "cgn:default",
-            "minecraft:item_model": "cgn:tool/gloomstone_hoe",
             "minecraft:max_damage": 1561,
             "minecraft:attribute_modifiers": {
               "modifiers": [
@@ -33,6 +31,7 @@
                 }
               ]
             },
+            "minecraft:tooltip_style": "cgn:default",
             "minecraft:custom_data": {
               "cgn": {
                 "ebonite_upgradeable": true

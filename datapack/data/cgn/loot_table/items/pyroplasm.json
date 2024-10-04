@@ -12,13 +12,12 @@
         {
           "function": "minecraft:set_components",
           "components": {
-            "minecraft:tooltip_style": "cgn:default",
-            "minecraft:item_model": "cgn:material/pyroplasm",
             "minecraft:damage_resistant": {
               "types": "#cgn:pyroplasm_explosion"
             },
             "!minecraft:food": {},
-            "!minecraft:consumable": {}
+            "!minecraft:consumable": {},
+            "minecraft:tooltip_style": "cgn:default"
           }
         },
         {

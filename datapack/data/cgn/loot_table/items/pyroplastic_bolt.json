@@ -13,7 +13,6 @@
           "function": "minecraft:set_components",
           "components": {
             "minecraft:tooltip_style": "cgn:default",
-            "minecraft:item_model": "cgn:weapon/pyroplastic_bolt",
             "minecraft:custom_data": {
               "cgn": {
                 "projectile": true

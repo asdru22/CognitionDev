@@ -12,8 +12,6 @@
         {
           "function": "minecraft:set_components",
           "components": {
-            "minecraft:tooltip_style": "cgn:default",
-            "minecraft:item_model": "cgn:armor/ebonite_helmet",
             "minecraft:max_damage": 407,
             "minecraft:attribute_modifiers": {
               "modifiers": [
@@ -47,7 +45,8 @@
             },
             "minecraft:damage_resistant": {
               "types": "#minecraft:is_fire"
-            }
+            },
+            "minecraft:tooltip_style": "cgn:default"
           }
         },
         {

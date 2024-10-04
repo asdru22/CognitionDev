@@ -28,7 +28,7 @@ class Item:
             self.components.update(settings.default_components)
 
         self.custom_data = data.get('custom_data', None)
-        if settings.default_components:
+        if settings.default_components and self.custom_data:
             self.components["minecraft:custom_data"] = {settings.namespace: self.custom_data}
 
         # Lore

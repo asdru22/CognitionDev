@@ -12,8 +12,6 @@
         {
           "function": "minecraft:set_components",
           "components": {
-            "minecraft:tooltip_style": "cgn:default",
-            "minecraft:item_model": "cgn:tool/ebonite_axe",
             "minecraft:max_damage": 2031,
             "minecraft:damage_resistant": {
               "types": "#minecraft:is_fire"
@@ -35,7 +33,8 @@
                   "slot": "mainhand"
                 }
               ]
-            }
+            },
+            "minecraft:tooltip_style": "cgn:default"
           }
         },
         {

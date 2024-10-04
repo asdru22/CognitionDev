@@ -12,11 +12,10 @@
         {
           "function": "minecraft:set_components",
           "components": {
-            "minecraft:tooltip_style": "cgn:default",
-            "minecraft:item_model": "cgn:material/ebonite_ingot",
             "minecraft:damage_resistant": {
               "types": "#minecraft:is_fire"
-            }
+            },
+            "minecraft:tooltip_style": "cgn:default"
           }
         },
         {

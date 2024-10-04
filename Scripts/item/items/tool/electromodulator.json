@@ -1,0 +1,28 @@
+{
+  "base_item": "warped_fungus_on_a_stick",
+  "translation": "Electromodulator",
+  "components": {
+    "minecraft:max_damage": 51
+  },
+  "custom_data": {
+    "prevent_striders": true,
+    "ignore_durability": true
+  },
+  "recipe": [
+    [
+      "",
+      "lightning_rod",
+      ""
+    ],
+    [
+      "cgn:cog",
+      "cgn:electroplasm",
+      "cgn:cog"
+    ],
+    [
+      "",
+      "copper_ingot",
+      ""
+    ]
+  ]
+}

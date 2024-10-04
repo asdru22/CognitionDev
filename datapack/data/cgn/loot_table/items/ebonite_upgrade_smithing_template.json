@@ -12,11 +12,10 @@
         {
           "function": "minecraft:set_components",
           "components": {
-            "minecraft:tooltip_style": "cgn:default",
-            "minecraft:item_model": "cgn:material/ebonite_upgrade_smithing_template",
             "rarity": "uncommon",
             "!minecraft:food": {},
-            "!minecraft:consumable": {}
+            "!minecraft:consumable": {},
+            "minecraft:tooltip_style": "cgn:default"
           }
         },
         {

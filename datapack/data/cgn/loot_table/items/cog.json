@@ -12,10 +12,9 @@
         {
           "function": "minecraft:set_components",
           "components": {
-            "minecraft:tooltip_style": "cgn:default",
-            "minecraft:item_model": "cgn:material/cog",
             "!minecraft:food": {},
-            "!minecraft:consumable": {}
+            "!minecraft:consumable": {},
+            "minecraft:tooltip_style": "cgn:default"
           }
         },
         {

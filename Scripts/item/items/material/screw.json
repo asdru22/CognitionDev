@@ -1,0 +1,26 @@
+{
+  "base_item": "poisonous_potato",
+  "translation": "Screw",
+  "components": {
+    "!minecraft:food": {},
+    "!minecraft:consumable": {}
+  },
+  "count": 3,
+  "recipe": [
+    [
+      "",
+      "copper_ingot",
+      ""
+    ],
+    [
+      "",
+      "copper_ingot",
+      "copper_ingot"
+    ],
+    [
+      "copper_ingot",
+      "",
+      ""
+    ]
+  ]
+}

@@ -12,8 +12,6 @@
         {
           "function": "minecraft:set_components",
           "components": {
-            "minecraft:tooltip_style": "cgn:default",
-            "minecraft:item_model": "cgn:armor/gloomstone_helmet",
             "minecraft:max_damage": 363,
             "minecraft:attribute_modifiers": {
               "modifiers": [
@@ -38,6 +36,7 @@
               "slot": "head",
               "dispensable": true
             },
+            "minecraft:tooltip_style": "cgn:default",
             "minecraft:custom_data": {
               "cgn": {
                 "ebonite_upgradeable": true
