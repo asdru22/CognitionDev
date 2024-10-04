@@ -10,7 +10,6 @@ def count_loot_table(namespace, item_id, count):
 def shaped_recipe(shaped, item, namespace):
     recipe = item.recipe
     item_id = item.id
-    translation_name = item.translation_name
     key_map = recipe['key']
     pattern = recipe['pattern']
 
@@ -37,8 +36,6 @@ def shaped_recipe(shaped, item, namespace):
                     item_name = item if ":" in item else "minecraft:" + item  # Add 'minecraft:' if missing
                     out += "{Slot:" + str(slot) + "b,id:\"" + item_name + "\"}"
                 elif item.startswith("cgn:"):
-                    print(item)
-
                     # Process a custom item
                     out += "{Slot:" + str(
                         slot) + "b,components:{\"minecraft:item_name\":'{\"translate\":\"item." + namespace + "." + item[

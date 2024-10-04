@@ -1,4 +1,4 @@
-execute if entity @s[predicate=cgn:entity_properties/is_on_ground] run return run function cgn:item/chargeable_armor/in_air/land
+execute if entity @s[scores={cgn.air_time=5..},predicate=cgn:entity_properties/is_on_ground] run return run function cgn:item/chargeable_armor/in_air/land
 
 scoreboard players add @s cgn.air_time 1
 

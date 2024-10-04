@@ -1,2 +1,3 @@
-cd C:\Users\Ale\Documents\GitHub\Cognition
-python z_other\scripts\items\_main.py
+cd C:/Users/Ale/Documents/GitHub/CognitionDev/Scripts/item
+set PYTHONPATH=C:/Users/Ale/Documents/GitHub/CognitionDev/Scripts
+python Main.py

@@ -12,22 +12,33 @@
         {
           "function": "minecraft:set_components",
           "components": {
+            "minecraft:max_stack_size": 1,
+            "minecraft:max_damage": 75,
             "!minecraft:food": {},
-            "!minecraft:consumable": {},
+            "minecraft:consumable": {
+              "consume_seconds": 100000000,
+              "animation": "block",
+              "sound": "minecraft:item.trident.thunder",
+              "has_consume_particles": false
+            },
+            "minecraft:use_cooldown": {
+              "seconds": 1,
+              "cooldown_group": "cgn:storm_capacitor"
+            },
             "minecraft:tooltip_style": "cgn:default",
             "minecraft:custom_data": {
               "cgn": {
-                "pottable": true
+                "usable": true
               }
             },
-            "minecraft:item_model": "cgn:block/wispthorn"
+            "minecraft:item_model": "cgn:tool/storm_capacitor"
           }
         },
         {
           "function": "minecraft:set_name",
           "target": "item_name",
           "name": {
-            "translate": "item.cgn.wispthorn"
+            "translate": "item.cgn.storm_capacitor"
           }
         },
         {
