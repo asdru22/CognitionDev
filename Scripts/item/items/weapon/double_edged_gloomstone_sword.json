@@ -57,21 +57,22 @@
     "double_edged_sword": true,
     "throwing_damage": 5
   },
-  "recipe": [
-    [
-      "",
-      "cgn:gloomstone_blade",
-      ""
+  "recipe": {
+    "type": "minecraft:crafting_shaped",
+    "category": "equipment",
+    "pattern": [
+      " B ",
+      "SKS",
+      " B "
     ],
-    [
-      "cgn:screw",
-      "stick",
-      "cgn:screw"
-    ],
-    [
-      "",
-      "cgn:gloomstone_blade",
-      ""
-    ]
-  ]
+    "key": {
+      "B": "cgn:gloomstone_blade",
+      "S": "cgn:screw",
+      "K": "minecraft:stick"
+    },
+    "result": {
+      "id": "cgn:double_edged_gloomstone_sword",
+      "count": 1
+    }
+  }
 }

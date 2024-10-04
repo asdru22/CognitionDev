@@ -25,21 +25,22 @@
   "custom_data": {
     "ebonite_upgradeable": true
   },
-  "recipe": [
-    [
-      "cgn:screw",
-      "cgn:gloomstone",
-      ""
+  "recipe": {
+    "type": "minecraft:crafting_shaped",
+    "category": "equipment",
+    "pattern": [
+      "SG ",
+      " K ",
+      " K "
     ],
-    [
-      "",
-      "stick",
-      ""
-    ],
-    [
-      "",
-      "stick",
-      ""
-    ]
-  ]
+    "key": {
+      "S": "cgn:screw",
+      "G": "cgn:gloomstone",
+      "K": "minecraft:stick"
+    },
+    "result": {
+      "id": "cgn:gloomstone_shovel",
+      "count": 1
+    }
+  }
 }

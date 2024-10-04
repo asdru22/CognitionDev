@@ -29,21 +29,22 @@
       ]
     }
   },
-  "recipe": [
-    [
-      "cgn:electroplasm",
-      "",
-      ""
+  "recipe": {
+    "type": "minecraft:crafting_shaped",
+    "category": "equipment",
+    "pattern": [
+      "E  ",
+      " D ",
+      "  S"
     ],
-    [
-      "",
-      "cgn:gloomstone_dagger",
-      ""
-    ],
-    [
-      "",
-      "",
-      "cgn:screw"
-    ]
-  ]
+    "key": {
+      "E": "cgn:electroplasm",
+      "D": "cgn:gloomstone_dagger",
+      "S": "cgn:screw"
+    },
+    "result": {
+      "id": "cgn:electroplasm_carver",
+      "count": 1
+    }
+  }
 }

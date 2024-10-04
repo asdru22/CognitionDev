@@ -16,7 +16,7 @@
         {
           "id": "cgn:electroplasm.legs",
           "type": "minecraft:luck",
-          "amount": 0.000000010,
+          "amount": 1e-08,
           "operation": "add_value",
           "slot": "legs"
         }
@@ -58,21 +58,21 @@
       ]
     }
   ],
-  "recipe": [
-    [
-      "",
-      "cgn:electroplasm",
-      ""
+  "recipe": {
+    "type": "minecraft:crafting_shaped",
+    "category": "equipment",
+    "pattern": [
+      " A ",
+      "ABA",
+      " A "
     ],
-    [
-      "cgn:electroplasm",
-      "golden_leggings",
-      "cgn:electroplasm"
-    ],
-    [
-      "",
-      "cgn:electroplasm",
-      ""
-    ]
-  ]
+    "key": {
+      "A": "cgn:electroplasm",
+      "B": "minecraft:golden_leggings"
+    },
+    "result": {
+      "id": "cgn:shockweave_leggings",
+      "count": 1
+    }
+  }
 }

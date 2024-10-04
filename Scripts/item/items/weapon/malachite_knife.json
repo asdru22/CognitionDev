@@ -53,17 +53,21 @@
       ]
     }
   ],
-  "recipe": [
-    [
-      "cgn:malachite",
-      "",
+  "recipe": {
+    "type": "minecraft:crafting_shaped",
+    "category": "equipment",
+    "pattern": [
+      "M  ",
+      "S  ",
       ""
     ],
-    [
-      "stick",
-      "",
-      ""
-    ],
-    []
-  ]
+    "key": {
+      "M": "cgn:malachite",
+      "S": "minecraft:stick"
+    },
+    "result": {
+      "id": "cgn:malachite_knife",
+      "count": 1
+    }
+  }
 }

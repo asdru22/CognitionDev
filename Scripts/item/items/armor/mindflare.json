@@ -21,17 +21,22 @@
       "dispensable": true
     }
   },
-  "recipe": [
-    [
-      "",
-      "phantom_membrane",
+  "recipe": {
+    "type": "minecraft:crafting_shaped",
+    "category": "equipment",
+    "pattern": [
+      " A ",
+      "BCB",
       ""
     ],
-    [
-      "cgn:pyroplasm",
-      "diamond_helmet",
-      "cgn:pyroplasm"
-    ],
-    []
-  ]
+    "key": {
+      "A": "minecraft:phantom_membrane",
+      "B": "cgn:pyroplasm",
+      "C": "minecraft:diamond_helmet"
+    },
+    "result": {
+      "id": "cgn:mindflare",
+      "count": 1
+    }
+  }
 }

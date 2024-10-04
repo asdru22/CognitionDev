@@ -6,21 +6,20 @@
     "!minecraft:consumable": {}
   },
   "count": 3,
-  "recipe": [
-    [
-      "",
-      "copper_ingot",
-      ""
+  "recipe": {
+    "type": "minecraft:crafting_shaped",
+    "category": "equipment",
+    "pattern": [
+      " C ",
+      " CC",
+      "C  "
     ],
-    [
-      "",
-      "copper_ingot",
-      "copper_ingot"
-    ],
-    [
-      "copper_ingot",
-      "",
-      ""
-    ]
-  ]
+    "key": {
+      "C": "minecraft:copper_ingot"
+    },
+    "result": {
+      "id": "cgn:screw",
+      "count": 1
+    }
+  }
 }

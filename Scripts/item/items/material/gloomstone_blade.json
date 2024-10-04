@@ -5,21 +5,21 @@
     "!minecraft:food": {},
     "!minecraft:consumable": {}
   },
-  "recipe": [
-    [
-      "",
-      "",
-      "cgn:gloomstone"
+  "recipe": {
+    "type": "minecraft:crafting_shaped",
+    "category": "equipment",
+    "pattern": [
+      "  G",
+      " G ",
+      "C  "
     ],
-    [
-      "",
-      "cgn:gloomstone",
-      ""
-    ],
-    [
-      "cgn:cog",
-      "",
-      ""
-    ]
-  ]
+    "key": {
+      "G": "cgn:gloomstone",
+      "C": "cgn:cog"
+    },
+    "result": {
+      "id": "cgn:gloomstone_blade",
+      "count": 1
+    }
+  }
 }

@@ -31,21 +31,21 @@
   "custom_data": {
     "ebonite_upgradeable": true
   },
-  "recipe": [
-    [
-      "cgn:gloomstone",
-      "cgn:cog",
-      "cgn:gloomstone"
+  "recipe": {
+    "type": "minecraft:crafting_shaped",
+    "category": "equipment",
+    "pattern": [
+      "ABA",
+      "AAA",
+      "AAA"
     ],
-    [
-      "cgn:gloomstone",
-      "cgn:gloomstone",
-      "cgn:gloomstone"
-    ],
-    [
-      "cgn:gloomstone",
-      "cgn:gloomstone",
-      "cgn:gloomstone"
-    ]
-  ]
+    "key": {
+      "A": "cgn:gloomstone",
+      "B": "cgn:cog"
+    },
+    "result": {
+      "id": "cgn:gloomstone_chestplate",
+      "count": 1
+    }
+  }
 }

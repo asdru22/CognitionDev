@@ -16,7 +16,7 @@
         {
           "id": "cgn:electroplasm.head",
           "type": "minecraft:luck",
-          "amount": 0.000000005,
+          "amount": 5e-09,
           "operation": "add_value",
           "slot": "head"
         }
@@ -58,21 +58,21 @@
       ]
     }
   ],
-  "recipe": [
-    [
-      "",
-      "cgn:electroplasm",
-      ""
+  "recipe": {
+    "type": "minecraft:crafting_shaped",
+    "category": "equipment",
+    "pattern": [
+      " A ",
+      "ABA",
+      " A "
     ],
-    [
-      "cgn:electroplasm",
-      "golden_helmet",
-      "cgn:electroplasm"
-    ],
-    [
-      "",
-      "cgn:electroplasm",
-      ""
-    ]
-  ]
+    "key": {
+      "A": "cgn:electroplasm",
+      "B": "minecraft:golden_helmet"
+    },
+    "result": {
+      "id": "cgn:shockweave_helmet",
+      "count": 1
+    }
+  }
 }

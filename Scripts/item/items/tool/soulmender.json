@@ -2,23 +2,24 @@
   "base_item": "shield",
   "translation": "Soulmender",
   "components": {
-    "minecraft:max_damage":350
+    "minecraft:max_damage": 350
   },
-  "recipe": [
-    [
-      "stone",
-      "stone",
-      "stone"
+  "recipe": {
+    "type": "minecraft:crafting_shaped",
+    "category": "equipment",
+    "pattern": [
+      "SSS",
+      "EDE",
+      "SSS"
     ],
-    [
-      "cgn:electroplasm",
-      "shield",
-      "cgn:electroplasm"
-    ],
-    [
-      "stone",
-      "stone",
-      "stone"
-    ]
-  ]
+    "key": {
+      "S": "minecraft:stone",
+      "E": "cgn:electroplasm",
+      "D": "minecraft:shield"
+    },
+    "result": {
+      "id": "cgn:soulmender",
+      "count": 1
+    }
+  }
 }

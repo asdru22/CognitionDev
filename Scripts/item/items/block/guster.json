@@ -21,22 +21,22 @@
   "custom_data": {
     "custom_block": true
   },
-  "folder": "blocks",
-  "recipe": [
-    [
-      "cgn:screw",
-      "stone",
-      "cgn:screw"
+  "recipe": {
+    "type": "minecraft:crafting_shaped",
+    "category": "equipment",
+    "pattern": [
+      "WSW",
+      "SBS",
+      "WSW"
     ],
-    [
-      "stone",
-      "breeze_rod",
-      "stone"
-    ],
-    [
-      "cgn:screw",
-      "stone",
-      "cgn:screw"
-    ]
-  ]
+    "key": {
+      "W": "cgn:screw",
+      "S": "minecraft:stone",
+      "B": "minecraft:breeze_rod"
+    },
+    "result": {
+      "id": "cgn:guster",
+      "count": 1
+    }
+  }
 }

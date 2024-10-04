@@ -57,21 +57,22 @@
     "double_edged_sword": true,
     "throwing_damage": 6
   },
-  "recipe": [
-    [
-      "",
-      "cgn:malachite_knife",
-      ""
+  "recipe": {
+    "type": "minecraft:crafting_shaped",
+    "category": "equipment",
+    "pattern": [
+      " K ",
+      "SBS",
+      " K "
     ],
-    [
-      "cgn:screw",
-      "breeze_rod",
-      "cgn:screw"
-    ],
-    [
-      "",
-      "cgn:malachite_knife",
-      ""
-    ]
-  ]
+    "key": {
+      "K": "cgn:malachite_knife",
+      "S": "cgn:screw",
+      "B": "minecraft:breeze_rod"
+    },
+    "result": {
+      "id": "cgn:double_edged_malachite_sword",
+      "count": 1
+    }
+  }
 }

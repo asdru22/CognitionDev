@@ -35,21 +35,22 @@
     }
   ],
   "count": 2,
-  "recipe": [
-    [
-      "cgn:gloomstone",
-      "cgn:ebonite_upgrade_smithing_template",
-      "cgn:gloomstone"
+  "recipe": {
+    "type": "minecraft:crafting_shaped",
+    "category": "equipment",
+    "pattern": [
+      "GTG",
+      "GDG",
+      "GGG"
     ],
-    [
-      "cgn:gloomstone",
-      "deepslate",
-      "cgn:gloomstone"
-    ],
-    [
-      "cgn:gloomstone",
-      "cgn:gloomstone",
-      "cgn:gloomstone"
-    ]
-  ]
+    "key": {
+      "G": "cgn:gloomstone",
+      "T": "cgn:ebonite_upgrade_smithing_template",
+      "D": "minecraft:deepslate"
+    },
+    "result": {
+      "id": "cgn:ebonite_upgrade_smithing_template",
+      "count": 1
+    }
+  }
 }

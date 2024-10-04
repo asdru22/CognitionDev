@@ -20,21 +20,24 @@
       ]
     }
   ],
-  "recipe": [
-    [
-      "",
-      "string",
-      "cgn:cog"
+  "recipe": {
+    "type": "minecraft:crafting_shaped",
+    "category": "equipment",
+    "pattern": [
+      " GC",
+      "GBI",
+      "CIS"
     ],
-    [
-      "string",
-      "crossbow",
-      "iron_nugget"
-    ],
-    [
-      "cgn:cog",
-      "iron_nugget",
-      "cgn:screw"
-    ]
-  ]
+    "key": {
+      "G": "minecraft:string",
+      "C": "cgn:cog",
+      "B": "minecraft:crossbow",
+      "I": "minecraft:iron_nugget",
+      "S": "cgn:screw"
+    },
+    "result": {
+      "id": "cgn:windup_crossbow",
+      "count": 1
+    }
+  }
 }

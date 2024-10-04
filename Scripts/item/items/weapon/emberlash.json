@@ -3,28 +3,30 @@
   "translation": "Emberlash",
   "components": {
     "minecraft:max_damage": 1453,
-    "minecraft:max_stack_size":1,
+    "minecraft:max_stack_size": 1,
     "!minecraft:food": {},
     "!minecraft:consumable": {}
   },
-  "custom_data":{
-    "charged":false
+  "custom_data": {
+    "charged": false
   },
-  "recipe": [
-    [
-      "",
-      "cgn:pyroplasm",
-      "cgn:electroplasm"
+  "recipe": {
+    "type": "minecraft:crafting_shaped",
+    "category": "equipment",
+    "pattern": [
+      " PE",
+      " G ",
+      "SP "
     ],
-    [
-      "",
-      "cgn:gloomstone_blade",
-      ""
-    ],
-    [
-      "cgn:screw",
-      "cgn:pyroplasm",
-      ""
-    ]
-  ]
+    "key": {
+      "P": "cgn:pyroplasm",
+      "E": "cgn:electroplasm",
+      "G": "cgn:gloomstone_blade",
+      "S": "cgn:screw"
+    },
+    "result": {
+      "id": "cgn:emberlash",
+      "count": 1
+    }
+  }
 }
