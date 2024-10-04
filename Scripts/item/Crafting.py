@@ -41,8 +41,8 @@ def shaped_recipe(shaped, item, namespace):
 
                     # Process a custom item
                     out += "{Slot:" + str(
-                        slot) + "b,components:{\"minecraft:item_name\":'{\"translate\":\"item."+namespace+"." + item[
-                                                                                                      4:] + "\"}'}}"
+                        slot) + "b,components:{\"minecraft:item_name\":'{\"translate\":\"item." + namespace + "." + item[
+                                                                                                                    4:] + "\"}'}}"
                 slot += 1
                 if not slot == 3:
                     out += ","
@@ -66,6 +66,7 @@ def shaped_recipe(shaped, item, namespace):
         out += count_loot_table(namespace, item_id, recipe["result"]["count"])
 
     shaped.append(out)
+
 
 def shapeless_recipe(shaped, recipe, item_id, namespace):
     pass
