@@ -8,3 +8,9 @@ execute store result score @s smithed.data if entity @s[scores={smithed.data=0}]
 
 data modify storage smithed.crafter:input flags set value ["consume_tools"]
 execute store result score @s smithed.data if entity @s[scores={smithed.data=0}] if score count smithed.data matches 2 if data storage smithed.crafter:input {recipe:[{id:"minecraft:diamond_sword",count:1,components:{"minecraft:custom_data":{cgn:{no_blades:true}}}},{count:2,components:{"minecraft:item_name": "{\"translate\":\"item.cgn.malachite_knife\"}"}}]} run function cgn:recipe/repair_malachite_sword/main
+
+execute store result score @s smithed.data if entity @s[scores={smithed.data=0}] if score count smithed.data matches 3 if data storage smithed.crafter:input {recipe:[\
+{count:1,components:{"minecraft:item_name": "{\"translate\":\"item.cgn.emberlash\"}","minecraft:custom_data":{cgn:{charged:false}}}},\
+{count:1,components:{"minecraft:item_name": "{\"translate\":\"item.cgn.gloomstone_blade\"}"}},\
+{count:1,components:{"minecraft:item_name": "{\"translate\":\"item.cgn.pyroplasm\"}"}}]} \
+run function cgn:recipe/repair_emberlash/main
