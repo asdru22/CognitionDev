@@ -4,4 +4,4 @@ loot spawn ~ ~ ~ loot cgn:items/pyroplasm
 
 function cgn:block/greek_fire/extinguish
 
-$execute as $(owner) run advancement grant @s only cgn:gameplay/make_pyroplasm
+$execute as @p[nbt={UUID:$(owner)}] run advancement grant @s only cgn:gameplay/make_pyroplasm
