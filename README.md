@@ -26,6 +26,6 @@
       |_|                                
 Riot under the Vermillion Moon
 ```
-- Rewrite axe dropper code and make it work with shovels and hoes
+- Rewrite axe dropper code to new scraper block
 - add gloomstone sentry
 - stormfront: ebonite shield that has storm capacitor ability included
