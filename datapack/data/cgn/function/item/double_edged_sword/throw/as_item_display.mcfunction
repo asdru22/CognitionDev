@@ -15,6 +15,6 @@ data modify entity @s item.components."minecraft:custom_data".cgn.uuid set from 
 
 execute if score $temp cgn.dummy matches 0 run function cgn:technical/macros/damage_slot/main {slot:"contents",amount:1}
 
-execute if items entity @s contents #swords[minecraft:item_name='{"translate": "item.cgn.double_edged_gloomstone_sword"}'] run return run tag @s add cgn.double_edged_sword.gloomstone
+execute if items entity @s contents #swords[minecraft:item_name='{"translate": "item.cgn.double_edged_gloomstone_sword"}'] run return run function cgn:item/double_edged_sword/gloomstone/setup
 execute if items entity @s contents #swords[minecraft:item_name='{"translate": "item.cgn.double_edged_malachite_sword"}'] run return run function cgn:item/double_edged_sword/malachite/setup
 execute if items entity @s contents #swords[minecraft:item_name='{"translate": "item.cgn.double_edged_ebonite_sword"}'] run return run function cgn:item/double_edged_sword/ebonite/setup
