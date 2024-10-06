@@ -1,3 +1,4 @@
+
 data remove storage cgn:macro root
 data modify storage cgn:macro root.item set from entity @s item
 data remove storage cgn:macro root.item.components."minecraft:custom_data".cgn.owner

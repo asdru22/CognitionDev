@@ -1,4 +1,5 @@
 scoreboard players set #2 cgn.dummy 2
+scoreboard players set #3 cgn.dummy 3
 scoreboard players set #5 cgn.dummy 5
 scoreboard players set #8 cgn.dummy 8
 scoreboard players set #10 cgn.dummy 10
