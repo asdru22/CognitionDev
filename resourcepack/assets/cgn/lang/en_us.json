@@ -1,7 +1,7 @@
 {
   "pack.cgn": "Cognition",
   "cgn.attribute": " %s %s",
-  "entity.cgn.gloomstone_sentinel": "Gloomstone Sentinel",
+  "entity.cgn.peeper": "Peeper",
   "item.cgn.windup_crossbow.projectiles": "%s Loaded Projectiles",
   "item.cgn.windup_crossbow.projectile": "%s Loaded Projectile",
   "item.cgn.ebonite_upgrade_smithing_template": "Ebonite Upgrade",
