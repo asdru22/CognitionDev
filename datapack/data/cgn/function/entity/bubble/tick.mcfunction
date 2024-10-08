@@ -9,5 +9,5 @@ tag @s remove cgn.bubble_temp
 
 execute positioned ~-1.5 ~-1.5 ~-1.5 if entity @n[type=!#cgn:can_enter_bubble,tag=!smithed.strict,dx=2,dz=2,dy=2] positioned ~1.5 ~1.5 ~1.5 run function cgn:entity/bubble/pop
 
-execute if entity @s[tag=!cgn.bubble.hit_ceiling] unless block ~ ~1.5 ~ #cgn:raycast_ignore run function cgn:entity/bubble/hit_ceiling
-execute if entity @s[tag=cgn.bubble.hit_ceiling] if block ~ ~1.5 ~ #cgn:raycast_ignore run function cgn:entity/bubble/no_ceiling
+execute if entity @s[tag=!cgn.bubble.hit_ceiling] if block ~ ~1.5 ~ #cgn:full_collision run function cgn:entity/bubble/hit_ceiling
+execute if entity @s[tag=cgn.bubble.hit_ceiling] unless block ~ ~1.5 ~ #cgn:full_collision run function cgn:entity/bubble/no_ceiling

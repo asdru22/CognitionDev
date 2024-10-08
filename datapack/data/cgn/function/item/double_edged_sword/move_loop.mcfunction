@@ -1,4 +1,4 @@
-execute unless block ~ ~ ~ #cgn:raycast_ignore run return run function cgn:item/double_edged_sword/item_display_hit_block
+execute if block ~ ~ ~ #cgn:full_collision run return run function cgn:item/double_edged_sword/item_display_hit_block
 
 tp @s[tag=!cgn.double_edged_sword.returning] ^ ^ ^0.13
 execute if entity @s[tag=cgn.double_edged_sword.returning] run function cgn:item/double_edged_sword/bounce/move_to_owner with storage cgn:temp root.double_edged_sword

@@ -18,4 +18,4 @@ data modify entity @s Pos set from storage cgn:storage root.temp.pos
 execute facing entity @s feet run function cgn:particle/lightning/light_loop
 # iterate
 scoreboard players remove #loop cgn.dummy 1
-execute if score #loop cgn.dummy matches 1.. at @s if block ~ ~ ~ #cgn:raycast_ignore run function cgn:particle/lightning/loop
+execute if score #loop cgn.dummy matches 1.. at @s unless block ~ ~ ~ #cgn:full_collision run function cgn:particle/lightning/loop
