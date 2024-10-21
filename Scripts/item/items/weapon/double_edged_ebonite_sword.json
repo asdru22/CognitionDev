@@ -7,7 +7,7 @@
       "animation": "spear",
       "consume_seconds": 1.0,
       "has_consume_particles": false,
-      "sound": "item.trident.throw"
+      "sound": {"sound_id":""}
     },
     "minecraft:attribute_modifiers": {
       "modifiers": [

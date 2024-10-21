@@ -1,9 +1,0 @@
-{
- "parent": "minecraft:block/orientable_with_bottom",
- "textures": {
-   "bottom": "cgn:item/entity/deepslate_kiln/top",
-   "front": "cgn:item/entity/deepslate_kiln/front_lit",
-   "side": "cgn:item/entity/deepslate_kiln/side",
-   "top": "cgn:item/entity/deepslate_kiln/top"
- }
-}

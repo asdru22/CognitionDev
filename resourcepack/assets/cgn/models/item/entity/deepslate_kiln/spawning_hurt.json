@@ -1,9 +1,0 @@
-{
- "parent": "minecraft:block/orientable_with_bottom",
- "textures": {
-   "bottom": "cgn:item/entity/deepslate_kiln/hurt/top",
-   "front": "cgn:item/entity/deepslate_kiln/hurt/front_lit",
-   "side": "cgn:item/entity/deepslate_kiln/hurt/side",
-   "top": "cgn:item/entity/deepslate_kiln/hurt/top"
- }
-}

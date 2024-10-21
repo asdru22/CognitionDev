@@ -13,10 +13,10 @@
           "function": "minecraft:set_components",
           "components": {
             "minecraft:damage_resistant": {
-              "types": "#minecraft:is_fire",
-              "!minecraft:food": {},
-              "!minecraft:consumable": {}
+              "types": "#minecraft:is_fire"
             },
+            "!minecraft:food": {},
+            "!minecraft:consumable": {},
             "minecraft:tooltip_style": "cgn:default",
             "minecraft:item_model": "cgn:material/ebognite"
           }

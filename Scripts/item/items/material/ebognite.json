@@ -3,9 +3,9 @@
   "translation": "Ebognite",
   "components": {
     "minecraft:damage_resistant": {
-      "types": "#minecraft:is_fire",
-      "!minecraft:food": {},
-      "!minecraft:consumable": {}
-    }
+      "types": "#minecraft:is_fire"
+    },
+    "!minecraft:food": {},
+    "!minecraft:consumable": {}
   }
 }

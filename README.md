@@ -8,15 +8,7 @@
 ```
 - fix subtitles
 - change using item sounds
-- make enchanted books obtainable/change how to obtain them, and implement the enchants
 - change how to get music disc
-- add Malachite Shield
-- add Peeper
-- add Gloomstone Shrine
-  - add Gloomlings
-  - custom vault
-  - Deepslate Kiln
-- add Storm Capacitor (replaces sneaking for charged armor)
 ```
  _   _           _       _         _   _ 
 | | | |_ __   __| | __ _| |_ ___  / | / |
